@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /* ===========================
-   GLOBAL / BASE STYLES
+   GLOBAL / BASE BODY STYLES
 =========================== */
 
 /* ---------- HTML & Body ---------- */
@@ -12,6 +12,7 @@ html, body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   background-image: url('https://images.unsplash.com/photo-1511300636408-a63a89df3482?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MH');
+  /* background-image: url('https://images.pexels.com/photos/8388520/pexels-photo-8388520.jpeg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,23 +25,6 @@ main {
   padding-top: 120px; 
   padding-bottom: 80px; 
 }
-
-/* ===========================
-   Global Catergory Titles
-=========================== */
-
-.category-title {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-  color: #000000;
-  line-height: 1.5;
-  padding-bottom: 0.25rem;
-  width: 100%;
-  text-align: left;
-  flex-shrink: 0; /* prevent shrinking */
-}
-
 
 /* ===========================
    HEADER
@@ -116,7 +100,6 @@ header {
 /* ---------- Toggle Button (Mobile) ---------- */
 
 #mobile-menu-button {
-
   cursor: pointer;
   color: rgb(55 65 81);
   background-color: transparent;
@@ -148,68 +131,6 @@ header {
     width: 100%;
 }
 
-@media (min-width: 768px) {
-    #nav-links.mobile-open {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        box-shadow: none;
-        padding: 0;
-        border-radius: 0;
-    }
-    #nav-links.mobile-open .nav-link {
-        padding: 0;
-        text-align: left;
-    }
-}
-
-/* ===========================
-   NAVBAR RESPONSIVE STYLING
-=========================== */
-
-/* ---------- Mobile adjustments: max-width 768px ---------- */
-
-@media (max-width: 768px) {
-  .navbar-container {
-    flex-wrap: wrap; 
-    align-items: flex-start; 
-    padding: 0 2rem;
-  }
-
-    .navbar-links {
-    display: none; 
-    flex-direction: column;
-    min-width: 180px;
-    max-width: 250px;
-    background-color: rgba(255, 255, 255, 0.28);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    top: 100%; 
-    right: 1rem;
-    left: auto;
-    padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
-    gap: 0.5rem; 
-  }
-
-  
-  .navbar-links.active {
-    display: flex; 
-  }
-
-  /* Show hamburger on mobile */
-  .navbar-toggle {
-    display: block; 
-  }
-
-  .navbar-links .navbar-link {
-    padding: 0.5rem 0; 
-    text-align: center; 
-  }
-}
 
 /* ===========================
    HOME PAGE
@@ -282,7 +203,6 @@ header {
   background: transparent;
   padding: 0 1rem 2rem;
   text-align: center;
-  /* position: fixed; */
   bottom: 0;
   width: 100%;
   z-index: 10;
@@ -305,4 +225,912 @@ header {
 
 .footer-icon-link:hover {
   color: gray;
+}
+
+/* ===========================
+   CONTACT.HTML Page
+=========================== */
+
+/* ---------- Main Container ---------- */
+.main-contact-container {
+  width: 70%;
+  text-align: center;
+}
+
+/* ---------- Main Container ---------- */
+.main-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- Second Container ---------- */
+.second-wrapper {
+  max-width: 35rem;
+  max-height: 30rem;
+  margin: 0 auto;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.30);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgb(243 244 246 / 0.25);
+  border-radius: 0.75rem;
+  justify-content: center;
+
+
+  z-index: 1;
+  color: #000000;
+  position: relative;
+  border-width: .1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Contact Card Title ---------- */
+.contact-card-title{
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: .5rem;
+}
+
+.contact-wrapper {
+  max-width: 95%;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.contact-card {
+  max-width: 100%;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+/* ---------- Labels ---------- */
+.contact-label {
+  display: block;
+  padding: 0.2rem;
+  text-align: left;
+  font-weight: 450;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+/* ---------- Inputs & Textareas ---------- */
+.form-input {
+  margin: 0;
+  width: 100%;
+  display: block;
+  padding: 0.75rem;
+  /* backdrop-filter: blur(10px); */
+  background-color: rgba(255, 255, 255, 0.40);
+  /* -webkit-backdrop-filter: blur(10px); */
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+}
+
+/* ---------- Submit Button Container & Button ---------- */
+.form-submit {
+  margin: 1.5rem;
+  justify-content: center;
+}
+
+
+/* ===========================
+   RESUME.HTML PAGE STYLE
+=========================== */
+
+/* ---------- Resume Main Container ---------- */
+.main-resume-container {
+  width: 100%;
+  padding: 2.5rem;
+  margin: 2rem auto;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.30);
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 1;
+  color: #000000;
+  position: relative;
+  border-width: .1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-container-wrapper {
+  justify-content: center;
+}
+
+/* ---------- Resume Profile Section ---------- */
+.container-a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;     
+  justify-content: flex-start;
+  gap: .2rem;
+  margin-bottom: .5;
+}
+
+.profile-image-wrapper {
+  width: 172px;
+  height: 245px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 4px solid #e5e7eb;
+  margin: .5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-info {
+  max-width: 850px;
+  min-height: 240px;       
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  padding: .5rem;
+}
+
+.profile-name h1 {
+  color: #000000;
+  font-size: 2.2rem;
+  font-weight: 555;
+  margin-top: .5rem; 
+  margin-bottom: 0; 
+}
+
+.profile-title h2 {
+  color: #d1d5db;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: .2rem; 
+  margin-bottom: .2rem; 
+}
+
+#typing-text {
+  display: inline-block;     
+  min-width: 12ch;           
+  white-space: nowrap;       
+}
+
+/* profile title - Blinking cursor typing-text */
+#typing-text::after {
+  color: #d1d5db ;           
+  margin-left: 2px;          
+  animation: blink 1s step-start infinite;
+  display: inline-block;
+  width: 1ch;
+  text-align: left;
+}
+
+/* profile title - Blinking keyframes for cursor */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.profile-summary p {
+  color: #000000;           
+  font-weight: 300; 
+  margin-top: .2rem; 
+  margin-bottom: .2rem; 
+}
+
+/* ---------- Resume Titles ---------- */
+
+/* Sub Titles (Skills, Education, Expereince) */
+.section-title {
+  font-size: 1.5rem; 
+  font-weight: 600; 
+  text-align: left;  
+  color: #000000;    
+  margin-bottom: .75rem;
+  margin-top: 0;
+  /* padding-bottom: 0.5rem; */
+  border-bottom: 2px solid #e5e7eb; 
+}
+
+/* ---------- Resume Skills Section ---------- */
+.main-subsection-title {
+  font-size: medium;
+  font-weight: 600;
+  border-bottom: 2px solid #ffffff;
+  margin: .5rem;
+  padding: .2rem;
+}
+
+/* ---------- Main Skill Section ---------- */
+ .main-skill-container {
+padding: .5rem;
+} 
+
+.main-skills {
+  display: flex;
+  gap: 3rem;
+}
+
+/* Main Skill Sub-Sections */
+.main-skill-subsection {
+  flex: 1 1 300px;
+}
+
+.skill-item {
+  margin-bottom: .2rem;
+}
+
+.skill-bar-title {
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background-color: #00000056;
+}
+
+/* Second Skill Section */
+/* .Sub-skills-categories {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: .5rem; 
+  align-items: stretch;
+  margin: 1rem;
+  gap: .5rem;
+} */
+
+ /* Sub Skill Wrapper ("2c-1", "2c-2", "2c-3") that has 3 skill categoy in it */
+/* .skill-category-wrapper {
+  flex: 1 1 0;
+  padding: .5rem;
+  display: flex;
+  min-width: 250px;
+  max-width: 350px;
+  flex-direction: column; 
+  align-items: flex-start;
+}
+
+.category-content {
+  flex: 1;              
+  width: 100%;
+  overflow: auto;  
+  line-height: 1.5;
+  color: #000000;
+  font-size: .95rem;
+  text-align: center;
+  justify-content: space-evenly;    
+} */
+
+/* ---------- Resume Experience Section ---------- */
+
+.experience-wrapper {
+  text-align: left;  
+  padding: .1rem;
+  margin: 0;
+}
+
+.experience-container {
+  text-align: left;  
+  padding: .1rem;
+  margin: 0;
+}
+
+.job-title {
+  font-size: 1.2rem; 
+  font-weight: 300; 
+  line-height: 1.75rem;
+  margin: 0.3rem 0;
+}
+
+.job-company-date {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
+  font-size: 1rem; 
+  font-weight: 500;
+  margin: 0.2rem 0;
+}
+
+.job-description {
+  margin: 0;
+  position: relative;
+  padding-left: .75rem;
+  line-height: 1.5rem;
+  list-style-position: inside;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
+.job-list {
+  padding-left: 1rem;   /* reduce space before bullets */
+  margin: 0;
+  list-style-type: disc;
+}
+
+.job-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* ---------- Resume Education Section ---------- */
+
+.education-container {
+  text-align: left;
+  padding: .5rem;
+}
+
+.education-sub-section {
+  padding: .5rem;
+  align-content: left;
+  text-align: left;
+}
+
+.education-item {
+  text-align: left;
+  margin-top: .5rem;
+}
+
+.education-degree {
+  margin: 0;
+  padding: .2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.institution {
+  margin: 0;
+  padding: .1rem;
+  font-size: .8rem;  
+  color: #dddddd;
+  /* color: rgb(209 213 219 / var(--tw-text-opacity, 1)); 
+  --tw-text-opacity: 1; */
+}
+
+/* ==============================
+   PORTFOLIO.HTML PAGE STYLE
+================================= */
+
+/* ---------- Portfolio Main Container & Titles ---------- */
+
+/* Page title centered at top of portfolio page */
+.page-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+/* Category title above each project section, left aligned */
+.category-title {
+  width: 100%;
+  flex-shrink: 0;
+  margin: .75rem 0;
+  font-weight: 525;
+  color: #000000;
+  text-align: left;
+  font-size: 1.75rem;
+  padding: 0 .7rem;   
+}
+
+/* ---------- Portfolio - Project Grid & Cards ---------- */
+
+/* Wrapper for grid layout of project cards (2 columns default) */
+.project-container-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 3rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Project post container and clickable card styling */
+.project-post,
+.project-card {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #f3f4f6; 
+  border-radius: 1rem; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover and focus effect for project cards */
+.project-post:hover,
+.project-post:focus {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Project card image — fills width, fixed height, covers area */
+.project-post-image {
+  width: 100%;
+  height: 16rem; 
+  object-fit: cover;
+  display: block;
+}
+
+/* Content section inside project card, flex column for layout */
+.project-content {
+  padding: 1.5rem 1.5rem 3rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Project title inside card, medium-large font */
+.project-title {
+  font-size: 1.5rem; 
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  margin-top: 0.2rem;
+}
+
+/* Short project summary text shown on card */
+.project-summary {
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* ---------- Portfolio Buttons ---------- */
+
+/* Read More / View Project button styling */
+.btn-secondary {
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  border: 2px solid black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Hover and focus styles for buttons */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+
+/* ===========================
+   BLOG.HTML PAGE STYLES
+=========================== */
+
+/* Blog Content Section Padding (section#blog-content) */
+#blog-content {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+/* Blog Wrapper: grid layout for blog columns (wrapper of blog-container divs) */
+.blog-container-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 3rem; 
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* ---------- Blogs Container & Posts ---------- */
+
+/* Blog Container: wrapper for a column of blog posts */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem; 
+  margin-top: 2rem;
+}
+
+/* Blog Post Card Styles */
+/* article.blog-post elements representing individual blog entries */
+.blog-post {
+  background-color: white;
+  border: 1px solid #f3f4f6;
+  border-radius: 1rem; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover & Focus state for blog-post for subtle elevation effect */
+.blog-post:hover,
+.blog-post:focus {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+/* Blog Post Image - claas contain each blog post inside for the featured image */
+.blog-post-image {
+  width: 100%;
+  height: 16rem; 
+  object-fit: cover;
+  display: block;
+}
+
+/* Blog Post Content Container - class wrapping all textual content in a blog post */
+.blog-post-content {
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Blog Post Title - blog post headline */
+.blog-post-title {
+  font-size: 1.5rem; 
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+/* Blog Post Meta Information - class containing date and author info */
+.blog-post-meta {
+  font-size: 0.875rem;
+  color: #4a4a4a; 
+  margin-bottom: 1rem;
+}
+
+/* Blog Post Excerpt - short summary with ellipsis after 3 lines */
+.blog-post-excerpt {
+  color: black;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  flex-grow: 1;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------- Blogs Buttons Styles & Posts ---------- */
+
+/* Secondary Button - class used for "Read More" button and a links in blog posts */
+.btn-secondary {
+  font-weight: 600;
+  color: black;
+  background-color: transparent;
+  border: 2px solid rgb(44, 2, 38);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  align-self: flex-start; 
+  margin-top: auto;
+}
+
+/* Hover & Focus states for btn-secondary */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+
+/* ==========================================
+   SHARED BASE STYLES (BLOG + PORTFOLIO) 
+============================================ */
+
+/* ---------- Main Container & Titles ---------- */
+
+/* Main Wrapper  Container style */
+.container {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* ---------- Base Modal Shared popup Styles ---------- */
+
+/* Modal container covers entire screen, hidden by default */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent background */
+}
+
+/* Modal content box centered with padding and max sizes */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto 10% auto;
+  padding: 2.5rem;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Close button (×) positioned top-right inside modal */
+.close {
+  color: #000000;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 30px;
+  font-weight: bold;
+  max-height: 800;
+  cursor: pointer;
+}
+
+/* Close button hover and focus color */
+.close:hover,
+.close:focus {
+  color: #000;
+}
+
+
+/* ==========================
+     MODAL PAGE STYLES
+=========================== */
+
+/* ---------- Project Modal Popup Overlay Styles  ---------- */
+
+/* Modal image styling, full width with max height */
+#modalImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Bold labels added before modal detail paragraphs */
+#modalDescription::before,
+#modalRole::before,
+#modalResults::before,
+#modalChallenges::before,
+#modalProcess::before {
+  font-weight: 600;
+}
+
+/* Label text for each modal detail paragraph */
+#modalDescription::before {
+  content: "Description: ";
+}
+
+#modalRole::before {
+  content: "Role: ";
+}
+
+#modalResults::before {
+  content: "Results: ";
+}
+
+#modalChallenges::before {
+  content: "Challenges: ";
+}
+
+#modalProcess::before {
+  content: "Process: ";
+}
+
+/* Extra link inside modal styled as button */
+#extraLink {
+   display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover style for modal extra link */
+#extraLink :hover {
+  background-color: #333;
+}
+
+/* ---------- Blog Modal Popup Overlay Styles  ---------- */
+
+/* Blog Modal Image - Display inside the modal (img#blogModalImage) */
+#blogModalImage {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+/* Adds Blog Modal text labels prefixes for date and author fields in modal */
+/* Uses ::before pseudo-elements for semantic clarity */
+#blogModalAuthor::before {
+  content: "Author: ";
+  font-weight: 600;
+}
+
+#blogModalDate::before {
+  content: "Date: ";
+  font-weight: 600;
+}
+
+/* Styled anchor for the "Read full blog post" extra link in modal */
+#blogModalExtraLink a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect for modal extra link */
+#blogModalExtraLink a:hover {
+  background-color: #333;
+}
+
+/* ===========================
+    RESPONSIVE PAGE STYLES
+=========================== */
+
+/* ---------- Navbar Mobile Style ---------- */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    padding: 0 2rem;
+  }
+
+    .navbar-links {
+    display: none; 
+    flex-direction: column;
+    min-width: 180px;
+    max-width: 250px;
+    background-color: rgba(255, 255, 255, 0.28);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 100%; 
+    right: 1rem;
+    left: auto;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+    gap: 0.5rem; 
+  }
+  
+  .navbar-links.active {
+    display: flex; 
+  }
+
+  /* Shows hamburger on mobile */
+  .navbar-toggle {
+    display: block; 
+  }
+
+  .navbar-links .navbar-link {
+    padding: 0.5rem 0; 
+    text-align: center; 
+  }
+}
+
+/* ---------- Resume Responsive Style ---------- */
+
+/* On medium screens and up: Desktop & large tablets 768px */
+@media (min-width: 768px) {
+  .profile-info {
+    text-align: left;
+  }
+
+  #profile {
+    flex-direction: row; 
+  }
+}
+
+/* On small screens: Tablet & mobile 1024px */
+@media (max-width: 1024px) {
+  .main-resume-wrapper {
+    width: 85%;
+    padding: 2.5rem;
+    margin: 2rem auto;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .profile-info {
+    text-align: center; 
+  }
+ 
+  .main-skills,
+  .Sub-skills-categories {
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+
+  .Sub-skills-categories {
+    flex-wrap: wrap;
+  }
+
+  .skill-category,
+  .skill-subsection {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ---------- Portfolio Responsive Style ---------- */
+
+@media (max-width: 1024px) {
+  .project-container-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 85%;     
+    margin: 0 auto;     
+    padding: 0 1rem;  
+  }
+    .category-title {
+    grid-template-columns: 1fr; 
+    padding-left: 4.7rem;      
+  }
+}
+
+/* ---------- Blog Responsive Style ---------- */
+
+@media (max-width: 1024px) {
+  .blog-container-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 85%;     
+    margin: 0 auto;     
+    padding: 0 1rem;    
+  }
 }

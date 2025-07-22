@@ -51,53 +51,67 @@
 
     <!-- Main Section -->
     <main class="main-container">
-      <section id="contact-content" class="container contact-container">
-        <h2 class="page-title">Get in Touch</h2>
+      <div id="main-contact-container" class="container main-contact-container">
+        <!-- Main Wrapper -->
+        <section id="main-wrapper" class="main-wrapper">
+          <!-- Page Title -->
+          <h1 class="page-title">Contact Page</h1>
 
-        <div class="contact-wrapper">
-          <div class="contact-conttainer">
-            <label for="name" class="contact-label">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="form-input"
-              placeholder="Your Name"
-              required
-            />
-          </div>
+          <!-- Second Wrapper -->
+          <section id="second-wrapper" class="second-wrapper">
+            <!-- Contact Caard Title -->
+            <h2 class="contact-card-title">Get in Touch</h2>
 
-          <div class="contact-conttainer">
-            <label for="email" class="contact-label">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-input"
-              placeholder="your.email@example.com"
-              required
-            />
-          </div>
+            <!-- Contact Content Wrappers -->
+            <div class="contact-wrapper">
+              <!-- Name Contact -->
+              <div class="contact-card">
+                <label for="name" class="contact-label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
 
-          <div class="contact-conttainer">
-            <label for="message" class="contact-label">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-input"
-              rows="6"
-              placeholder="Your message..."
-              required
-            ></textarea>
-          </div>
+              <!-- Email Contact-->
+              <div class="contact-card">
+                <label for="email" class="contact-label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
 
-          <div class="form-submit">
-            <button type="submit" class="btn btn-primary">
-              Send Message <i class="fas fa-paper-plane btn__icon"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+              <!-- Message Contact -->
+              <div class="contact-card">
+                <label for="message" class="contact-label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input"
+                  rows="6"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                  Send Message <i class="fas fa-paper-plane btn__icon"></i>
+                </button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
     </main>
 
     <!-- Footer Section -->

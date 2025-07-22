@@ -18,8 +18,9 @@
     <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <!-- Body Section -->
-  <body class="contact">
+
+  <!-- Main Section -->
+  <body class="blog">
     <!-- Header Section -->
     <header>
       <!-- Navigation Bar -->
@@ -48,10 +49,189 @@
       </nav>
     </header>
 
+
     <!-- Main Section -->
-    <main>
-      <p>This is the blog page.</p>
+    <main class="main-container">
+      <div id="main-wrapper" class="container">
+        <!-- Page Title Centered -->
+        <h1 class="page-title">My Blog</h1>
+
+        <!-- Main Blog Content Container -->
+        <div class="blog-container-wrapper">
+          <!-- Blog Container 1 -->
+          <div class="blog-container">
+            <!-- Blog 1 -->
+            <article
+              class="blog-post"
+              data-blog-id="blog1"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=858&auto=format&fit=crop"
+                alt="Blog Post 1"
+                class="blog-post-image"
+              />
+              <div class="blog-post-content">
+                <h3 class="blog-post-title">The Future of AI in Design</h3>
+                <div class="blog-post-meta">
+                  <span class="blog-post-date">July 15, 2025</span> |
+                  <span class="blog-post-author">Jane Doe</span>
+                </div>
+                <p class="blog-post-excerpt">
+                  From automating tedious tasks to generating entire layouts, AI
+                  tools are increasingly sophisticated. This allows designers to
+                  focus on strategy and creative problem-solving rather than
+                  repetitive work. AI can analyze data to help designers make
+                  more informed decisions. However, AI is a tool, not a
+                  replacement for human creativity. Successful designers will
+                  learn to collaborate with AI and leverage its power to enhance
+                  their capabilities. The future of design will be a
+                  collaborative journey between human and artificial
+                  intelligence.
+                </p>
+                <a href="blog-post1.html" class="btn btn-secondary"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <!-- Blog 2 -->
+            <article
+              class="blog-post"
+              data-blog-id="blog2"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=858&auto=format&fit=crop"
+                alt="Blog Post 2"
+                class="blog-post-image"
+              />
+              <div class="blog-post-content">
+                <h3 class="blog-post-title">
+                  Mastering User Research Techniques
+                </h3>
+                <div class="blog-post-meta">
+                  <span class="blog-post-date">July 10, 2025</span> |
+                  <span class="blog-post-author">Jane Doe</span>
+                </div>
+                <p class="blog-post-excerpt">
+                  Effective user research is the foundation of great UX design.
+                  It allows us to understand users' needs, behaviors, and pain
+                  points. Interviews provide deep insights, surveys gather data
+                  at scale, and usability testing reveals friction points. Card
+                  sorting, tree testing, and A/B testing are also valuable. The
+                  key is choosing the right method for each stage. Continuous
+                  research throughout the design process helps create products
+                  that are both beautiful and highly functional.
+                </p>
+                <a href="blog-post2.html" class="btn btn-secondary"
+                  >Read More</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!-- Blog Container 2 -->
+          <div class="blog-container">
+            <!-- Blog 3 -->
+            <article
+              class="blog-post"
+              data-blog-id="blog3"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=858&auto=format&fit=crop"
+                alt="Blog Post 3"
+                class="blog-post-image"
+              />
+              <div class="blog-post-content">
+                <h3 class="blog-post-title">
+                  Responsive Design Best Practices
+                </h3>
+                <div class="blog-post-meta">
+                  <span class="blog-post-date">July 5, 2025</span> |
+                  <span class="blog-post-author">Jane Doe</span>
+                </div>
+                <p class="blog-post-excerpt">
+                  Responsive design is essential in a multi-device world. Your
+                  site must look and work great on desktops, tablets, and
+                  phones. Use flexible grids, fluid media, and media queries. A
+                  mobile-first approach ensures the core experience works on
+                  small screens first. Prioritize content, test on real devices,
+                  and progressively enhance features for larger screens. This
+                  approach ensures an adaptable, seamless experience for all
+                  users.
+                </p>
+                <a href="blog-post3.html" class="btn btn-secondary"
+                  >Read More</a
+                >
+              </div>
+            </article>
+
+            <!-- Blog 4 -->
+            <article
+              class="blog-post"
+              data-blog-id="blog4"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?q=80&w=858&auto=format&fit=crop"
+                alt="Blog Post 4"
+                class="blog-post-image"
+              />
+              <div class="blog-post-content">
+                <h3 class="blog-post-title">The Power of Prototyping in UX</h3>
+                <div class="blog-post-meta">
+                  <span class="blog-post-date">June 30, 2025</span> |
+                  <span class="blog-post-author">Jane Doe</span>
+                </div>
+                <p class="blog-post-excerpt">
+                  Prototyping bridges the gap between wireframes and final
+                  products, allowing testing and feedback early on. Low-fidelity
+                  prototypes help with early ideas, while high-fidelity ones
+                  simulate final interactions. They help communicate with
+                  stakeholders, identify issues early, and allow rapid
+                  iteration. Prototyping ensures a user-centered, effective, and
+                  delightful end product.
+                </p>
+                <a href="blog-post4.html" class="btn btn-secondary"
+                  >Read More</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- Blog Modal markup -->
+    <div id="blogModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="blogModalImage" src="" alt="" />
+        <h4 id="blogModalTitle"></h4>
+        <p id="blogModalDate"></p>
+        <p id="blogModalAuthor"></p>
+        <p id="blogModalExcerpt"></p>
+        <p id="blogModalExtraLink">
+          <a
+            id="blogExtraLink"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Read full blog post</a
+          >
+        </p>
+      </div>
+    </div>
 
     <!-- Footer Section -->
     <footer class="site-footer">

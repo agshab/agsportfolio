@@ -3,7 +3,6 @@
   <!-- Head Section -->
   <head>
     <meta charset="UTF-8" />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome Icons -->
     <link
@@ -15,12 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <!-- Body Section -->
+  <body class="portfolio">
     <!-- Header Section -->
     <header>
       <!-- Navigation Bar -->
@@ -50,11 +50,401 @@
     </header>
 
     <!-- Main Section -->
-    <main>
-      <p>This is the portfolio page.</p>
+    <main class="main-container">
+      <div id="main-wrapper" class="container">
+        <!-- Page Title Centered -->
+        <h1 class="page-title">My Portfolio</h1>
+
+        <!-- Main Projects Content Container -->
+        <div id="portfolio-containter">
+          <!-- Tech & Product Design -->
+          <h3 class="category-title">Tech & Product Design</h3>
+          <section class="project-container-wrapper">
+            <!-- Project 1 -->
+            <project
+              class="project-post"
+              data-project-id="project1"
+              data-extra-link="https://github.com/agshab/Forecastly"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=858&auto=format&fit=crop"
+                  alt="Forecastly Weather App"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Forecastly - Weather App</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    A mobile-first weather app providing real-time,
+                    location-based forecasts with an intuitive user experience.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      Frontend development, UI design, and API integration for a
+                      fast, engaging app that improves data accessibility and
+                      user trust. Optimized API handling, deepened accessibility
+                      standards, designed responsive layouts, integrated
+                      real-time data, and iterated UX through testing.
+                    </p>
+                    <span class="project-role">
+                      Role: Frontend development, UI design, API integration
+                    </span>
+                    <span class="project-results">
+                      Results: Fast, engaging app with improved data
+                      accessibility and user trust
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Optimized API handling, deepened accessibility
+                      standards
+                    </span>
+                    <span class="project-process">
+                      Process: Designed responsive layouts, integrated real-time
+                      data, iterated UX through testing
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="Read more about Forecastly Weather App"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </a>
+            </project>
+
+            <!-- Project 2 -->
+            <project
+              class="project-post"
+              data-project-id="project2"
+              data-extra-link="https://github.com/agshab/Laundromat"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1657551364414-63b411af7ce9?q=80&w=858&auto=format&fit=crop"
+                  alt="Laundromat App"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Laundromat App</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    A C# application connecting users and owners to real-time
+                    in-store laundry machine data.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      Full-stack development and UI design for improved customer
+                      experience and operational efficiency. Built user-friendly
+                      interface, implemented backend logic for live data,
+                      integrated with store systems, handling real-time status
+                      updates and hardware signals.
+                    </p>
+                    <span class="project-role">
+                      Role: Full-stack development, UI design
+                    </span>
+                    <span class="project-results">
+                      Results: Improved customer experience and operational
+                      efficiency
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Building real-time status updates, integrating
+                      hardware signals
+                    </span>
+                    <span class="project-process">
+                      Process: Built user-friendly interface, implemented
+                      backend logic for live data, integrated with store systems
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="Read more about Laundromat App"
+                  >
+                    Read More
+                  </button>
+                </div>
+              </a>
+            </project>
+          </section>
+
+          <!-- Digital Experiences -->
+          <h3 class="category-title">Digital Experiences</h3>
+          <section class="project-container-wrapper">
+            <!-- Project 3 -->
+            <project
+              class="project-post"
+              data-project-id="project3"
+              data-extra-link="https://github.com/agshab/Forecastly"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=858&auto=format&fit=crop"
+                  alt="Digital Design Project 1"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Digital Design Project 1</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    Placeholder description for a visually engaging digital
+                    design project focused on UI/UX.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      UI/UX design and visual concept development. Researched,
+                      wireframed, designed high-fidelity prototypes, and
+                      iterated for improved consistency and increased
+                      conversions.
+                    </p>
+                    <span class="project-role">
+                      Role: UI/UX design, visual concept development
+                    </span>
+                    <span class="project-results">
+                      Results: Improved consistency and increased conversions
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Creating cohesive visual identity for
+                      engagement and accessibility
+                    </span>
+                    <span class="project-process">
+                      Process: Research, wireframing, high-fidelity design,
+                      prototyping
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="View Digital Design Project 1 details"
+                  >
+                    View Project
+                  </button>
+                </div>
+              </a>
+            </project>
+
+            <!-- Project 4 -->
+            <project
+              class="project-post"
+              data-project-id="project4"
+              data-extra-link="https://github.com/agshab/Laundromat"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=858&auto=format&fit=crop
+"
+                  alt="Digital Design Project 2"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Digital Design Project 2</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    Placeholder description for an interactive website redesign
+                    focused on digital storytelling.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      Visual design and motion graphics creation. Developed
+                      motion storyboards, micro-interactions, and iterative
+                      animation testing to increase user retention and brand
+                      recall.
+                    </p>
+                    <span class="project-role">
+                      Role: Visual designer, motion graphics creator
+                    </span>
+                    <span class="project-results">
+                      Results: Increased user retention and brand recall
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Balancing animations with performance across
+                      devices
+                    </span>
+                    <span class="project-process">
+                      Process: Motion storyboards, micro-interactions, iterative
+                      animation testing
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="View Digital Design Project 2 details"
+                  >
+                    View Project
+                  </button>
+                </div>
+              </a>
+            </project>
+          </section>
+
+          <!-- Branding & Campaigns -->
+          <h3 class="category-title">Branding & Campaigns</h3>
+          <section class="project-container-wrapper">
+            <!-- Project 5 -->
+            <project
+              class="project-post"
+              data-project-id="project5"
+              data-extra-link="https://github.com/agshab/Forecastly"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=858&auto=format&fit=crop"
+                  alt="Campaign Project 1"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Campaign Project 1</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    Placeholder description for a branding campaign focused on
+                    launching a new product line.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      Brand strategy and creative direction for launching a new
+                      product line. Developed brand guidelines, visuals, and
+                      cross-platform rollout strategy to strengthen brand
+                      identity and exceed sales targets.
+                    </p>
+                    <span class="project-role">
+                      Role: Brand strategist, creative director
+                    </span>
+                    <span class="project-results">
+                      Results: Strengthened brand identity, increased
+                      engagement, exceeded sales targets
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Unifying messaging across all channels
+                    </span>
+                    <span class="project-process">
+                      Process: Brand guidelines, visuals, cross-platform rollout
+                      strategy
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="View Campaign Project 1 details"
+                  >
+                    View Project
+                  </button>
+                </div>
+              </a>
+            </project>
+
+            <!-- Project 6 -->
+            <project
+              class="project-post"
+              data-project-id="project6"
+              data-extra-link="https://github.com/agshab/Laundromat"
+              tabindex="0"
+              role="button"
+              aria-pressed="false"
+            >
+              <a href="#" class="project-card">
+                <img
+                  src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=858&auto=format&fit=crop"
+                  alt="Campaign Project 2"
+                  class="project-post-image"
+                />
+                <div class="project-content">
+                  <h4 class="project-title">Campaign Project 2</h4>
+                  <!-- Short summary that shows on card -->
+                  <p class="project-summary">
+                    Placeholder description for a multi-channel awareness
+                    campaign focused on social impact.
+                  </p>
+                  <!-- Hidden details for modal -->
+                  <div
+                    class="project-description-container"
+                    style="display: none"
+                  >
+                    <p class="project-description">
+                      Lead design and campaign management for multi-channel
+                      awareness campaign focused on social impact. Created
+                      visuals, rollout plans, and influencer collaborations to
+                      increase awareness and community action.
+                    </p>
+                    <span class="project-role">
+                      Role: Lead designer, campaign manager
+                    </span>
+                    <span class="project-results">
+                      Results: Increased awareness and measurable community
+                      action
+                    </span>
+                    <span class="project-challenges">
+                      Challenges: Communicating complex messages clearly to
+                      diverse audiences
+                    </span>
+                    <span class="project-process">
+                      Process: Visuals, rollout plan, influencer collaborations
+                    </span>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    aria-label="View Campaign Project 2 details"
+                  >
+                    View Project
+                  </button>
+                </div>
+              </a>
+            </project>
+          </section>
+        </div>
+      </div>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Modal markup -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="" />
+        <h4 id="modalTitle"></h4>
+        <p id="modalSummary"></p>
+        <div class="modal-project-container-wrapper">
+          <p id="modalDescription"></p>
+          <p id="modalRole"></p>
+          <p id="modalResults"></p>
+          <p id="modalChallenges"></p>
+          <p id="modalProcess"></p>
+          <a id="extraLink" href="#" target="_blank" rel="noopener noreferrer">
+            View full project
+          </a>
+        </div>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="footer-icons" id="footer-icons">
         <a
@@ -84,8 +474,6 @@
         </a>
       </div>
     </footer>
-
-    <!-- Your custom JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
